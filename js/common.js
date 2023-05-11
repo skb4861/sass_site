@@ -1,7 +1,6 @@
 $(function(){    
     // page 로드이후 주소값 가져오기
     var currentHref = splitHref($(location));
-    console.log(currentHref);
     
     if( currentHref == 'index' || currentHref == ''){
         $('#header').load('./include/header.html');
