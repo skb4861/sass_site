@@ -3,7 +3,7 @@ $(function(){
     var currentHref = splitHref($(location));
     console.log(currentHref);
     
-    if( currentHref == 'index'){
+    if( currentHref == 'index' || currentHref == ''){
         $('#header').load('./include/header.html');
         $('#footer').load('./include/footer.html');
     }else{
