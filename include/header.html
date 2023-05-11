@@ -1,5 +1,5 @@
 <h1 id="top-logo">
-    <a href="index.html">XWood</a>
+    <a href="./index.html">XWood</a>
 </h1>
 <nav id="top-nav">
     <ul>
@@ -47,8 +47,12 @@
         //     hrefChange('#top-logo a','../index.html');
         // }
         if (currentHref == 'index' || currentHref == '') {
-            hrefChange('#top-nav a', '..');
-            hrefChange('#top-logo a', '../index.html');
+            hrefChange('#top-nav a', './');
+            hrefChange('#top-logo a', './');
+        }
+        else {
+            hrefChange('#top-nav a', '../');
+            hrefChange('#top-logo a', '../');
         }
     });
 </script>
